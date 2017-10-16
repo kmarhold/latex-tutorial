@@ -1,0 +1,17 @@
+---
+  bibliography: example_bibliography.json
+  csl: csl/universite-libre-de-bruxelles-histoire.csl
+
+  lang: fr
+  documentclass: scrartcl
+
+  geometry: a4paper
+  # geometry: margin=1cm
+  linestretch: 1.1
+
+  linkcolor: black
+  urlcolor: blue
+  toc: true
+  lot: true
+  #lof: true
+---

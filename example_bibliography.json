@@ -1,0 +1,142 @@
+[
+	{
+		"id": "http://zotero.org/users/2663066/items/UXDSE6HB",
+		"type": "book",
+		"title": "Networks of Power",
+		"publisher": "Johns Hopkins University Press",
+		"publisher-place": "Baltimore",
+		"event-place": "Baltimore",
+		"note": "bibtex: hughes_networks_1983",
+		"author": [
+			{
+				"family": "Hughes",
+				"given": "Thomas P."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1983"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/2663066/items/VSWI74DN",
+		"type": "article-journal",
+		"title": "L'État face à l'innovation technique : le cas du véhicule électrique",
+		"container-title": "Revue française de science politique",
+		"page": "426-447",
+		"volume": "29",
+		"issue": "3",
+		"URL": "http://www.persee.fr/web/revues/home/prescript/article/rfsp_0035-2950_1979_num_29_3_418601",
+		"DOI": "10.3406/rfsp.1979.418601",
+		"ISSN": "0035-2950",
+		"note": "bibtex: callon_letat_1979",
+		"shortTitle": "L'État face à l'innovation technique",
+		"language": "fr",
+		"author": [
+			{
+				"family": "Callon",
+				"given": "Michel"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1979"
+				]
+			]
+		},
+		"accessed": {
+			"date-parts": [
+				[
+					"2015",
+					12,
+					3
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/2663066/items/WEUCCBFV",
+		"type": "paper-conference",
+		"title": "Expérimentation de véhicules électriques légérs et lourds à EDF. Exposé des problèmes qui se posent",
+		"container-title": "Fourth International Electric Vehicle Symposium",
+		"publisher-place": "Düsseldorf",
+		"archive": "AVERE",
+		"event": "Fourth International Electric Vehicle Symposium",
+		"event-place": "Düsseldorf",
+		"note": "bibtex: heurtin_experimentation_1976",
+		"language": "fr",
+		"author": [
+			{
+				"family": "Heurtin",
+				"given": "J."
+			},
+			{
+				"family": "Moneuse",
+				"given": "M."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1976"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/2663066/items/TJWBMFNQ",
+		"type": "entry-encyclopedia",
+		"title": "Honda EV Plus",
+		"container-title": "Wikipedia",
+		"source": "Wikipedia",
+		"abstract": "The Honda EV Plus was the first battery electric vehicle from a major automaker with non-lead acid batteries. Roughly 340 EV Plus models were produced and released. The EV Plus was taken out of production in 1999 when Honda announced the release of its first hybrid electric vehicle, the Honda Insight. The EV Plus was made to learn about advanced battery use in an electric car and to meet California Air Resources Board requirements for zero-emission vehicles, the same as the new General Motors EV1. It served as a test bed for the pancake-style motor, electronic control unit, power control unit and the Nickel–metal hydride battery (NiMH) later used in Honda hybrids and developed further in the first Honda FCX Fuel Cell Vehicles made from returned (decommissioned) EV Plus chassis.\nThe EV Plus featured on-board conductive charging with the Avcon connector, passive battery balancing, regenerative braking and deceleration, AC/heat-pump climate control, HID headlights, 4 seats, and electrically heated windshield. Units deployed in cold climates also had oil-fired heaters for faster cabin heating and passenger comfort. As with virtually all vehicles, range was affected by driving style: rapid acceleration, high speeds, and fast stops lowered the all-electric range significantly. United States Environmental Protection Agency rated at 81 miles (130 km), careful driving would give it a range of just over 100 miles (160 km). The EV Plus came with a 12 V battery for running normal 12 volt accessories and lighting.",
+		"URL": "https://en.wikipedia.org/w/index.php?title=Honda_EV_Plus&oldid=754829857",
+		"note": "Page Version ID: 754829857 \nbibtex: _honda_2016",
+		"language": "en",
+		"issued": {
+			"date-parts": [
+				[
+					"2016",
+					12,
+					14
+				]
+			]
+		},
+		"accessed": {
+			"date-parts": [
+				[
+					"2017",
+					4,
+					14
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/2663066/items/SWG48GEF",
+		"type": "article",
+		"title": "Letter to H.-G. Müller",
+		"archive": "Archives EDF",
+		"archive_location": "823337, 29093",
+		"abstract": "Letter asking permission to share EDF-RWE agreement with European Communities/C. Garric in view of possible support",
+		"author": [
+			{
+				"family": "Gallot",
+				"given": "Jacques"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1975",
+					12,
+					5
+				]
+			]
+		}
+	}
+]
