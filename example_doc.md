@@ -216,7 +216,7 @@ maximus viverra sem. Pellentesque lacus nibh, ultrices quis convallis in,
 ultrices at diam. Cras sagittis nisi eu arcu porttitor volutpat.
 
 \begin{table}
-\caption[Development of RWE's and EDF's energy inputs in percent]{Development of RWE's and EDF's energy inputs in percent}
+\caption[Un tableau LaTeX]{Un tableau LaTeX}
   \centering
     \begin{tabular}{lllll}
     \toprule
