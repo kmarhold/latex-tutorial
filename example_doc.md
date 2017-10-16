@@ -165,7 +165,14 @@ Praesent urna magna, vulputate ut metus at, tempor luctus mi.
 
 ## Tableaux
 
-Donec commodo magna a faucibus suscipit. Nulla purus purus, blandit vitae mauris vel, mollis feugiat justo. Sed accumsan vehicula sodales. Ut eget consectetur tellus. Cras nisi orci, porta vel felis sit amet, dictum vestibulum urna. Duis ac viverra purus, a pharetra nisi. Morbi nunc metus, gravida aliquet varius non, posuere id augue. Sed commodo sapien finibus tincidunt vehicula. Mauris metus metus, eleifend a odio sit amet, aliquet lacinia mauris. Aliquam eget ullamcorper dui. Nulla id ornare sapien. Nulla viverra, ipsum sed molestie sagittis, nisl erat ultricies neque, non malesuada velit sem sed orci.
+Donec commodo magna a faucibus suscipit. Nulla purus purus, blandit vitae mauris
+vel, mollis feugiat justo. Sed accumsan vehicula sodales. Ut eget consectetur
+tellus. Cras nisi orci, porta vel felis sit amet, dictum vestibulum urna. Duis
+ac viverra purus, a pharetra nisi. Morbi nunc metus, gravida aliquet varius non,
+posuere id augue. Sed commodo sapien finibus tincidunt vehicula. Mauris metus
+metus, eleifend a odio sit amet, aliquet lacinia mauris. Aliquam eget
+ullamcorper dui. Nulla id ornare sapien. Nulla viverra, ipsum sed molestie
+sagittis, nisl erat ultricies neque, non malesuada velit sem sed orci.
 
 | Format      | File extension |
 |-------------|----------------|
