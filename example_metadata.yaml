@@ -1,15 +1,15 @@
 ---
-bibliography: example_bibliography.json
-csl: csl/universite-libre-de-bruxelles-histoire.csl
+  bibliography: example_bibliography.json
+  csl: csl/universite-libre-de-bruxelles-histoire.csl
 
-lang: fr
-documentclass: scrartcl
+  lang: fr
+  documentclass: scrartcl
 
-geometry: a4paper
-linestretch: 1.1
+  geometry: a4paper
+  linestretch: 1.1
 
-linkcolor: black
-urlcolor: blue
-toc: true
-lot: true
+  linkcolor: black
+  urlcolor: blue
+  toc: true
+  lot: true
 ---
