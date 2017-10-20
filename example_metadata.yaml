@@ -3,7 +3,7 @@
   csl: csl/universite-libre-de-bruxelles-histoire.csl
 
   lang: fr
-  documentclass: scrartcl
+  documentclass: paper
 
   geometry: a4paper
   linestretch: 1.1

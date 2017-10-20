@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Karsten Marhold">
+  <title>Atelier LaTeX MMC</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/moon.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+  <h1 class="title">Atelier LaTeX MMC</h1>
+  <p class="author">Karsten Marhold</p>
+  <p class="date">18/10/2017</p>
+</section>
+
+<section><section id="introduction" class="titleslide slide level1"><h1>1 - Introduction</h1></section><section id="quallons-nous-faire-aujourdhui" class="slide level2">
+<h2>Qu'allons-nous faire aujourd'hui ?</h2>
+<ul>
+<li>Convertir des documents</li>
+<li>Apprendre à écrire dans la syntaxe Markdown</li>
+<li>Intégrer des références bibliographiques</li>
+<li>Générer les plus beaux documents du monde sans utiliser Microsoft Word</li>
+</ul>
+</section><section id="ce-que-nous-nallons-pas-faire..." class="slide level2">
+<h2>Ce que nous n'allons pas faire...</h2>
+<ul>
+<li>Apprendre du LaTeX (sorry)</li>
+<li>Découvrir le système « parfait » d'écriture</li>
+<li>Tout mémoriser</li>
+</ul>
+</section><section id="pourquoi" class="slide level2">
+<h2>Pourquoi ?</h2>
+<ul>
+<li>Séparer écriture et mise en page</li>
+<li>Plus de flexibilité en termes de :
+<ul>
+<li>choix de format</li>
+<li>choix d'éditeur de texte</li>
+<li>choix de « workflow »</li>
+<li>choix de structure</li>
+</ul></li>
+</ul>
+</section><section id="why-microsoft-word-must-die" class="slide level2">
+<h2>Why Microsoft Word must die</h2>
+<p><a href="http://www.antipope.org/charlie/blog-static/2013/10/why-microsoft-word-must-die.html" class="uri">http://www.antipope.org/charlie/blog-static/2013/10/why-microsoft-word-must-die.html</a></p>
+</section><section id="choisir-son-camp" class="slide level2">
+<h2>Choisir son camp</h2>
+<p><img src="images/microsoft.jpg" /> <img src="images/lamport.jpg" /></p>
+</section><section id="latex" class="slide level2">
+<h2>LaTeX</h2>
+<!-- Add forced line break to avoid images being treated as figures,
+    therefore suppressing captions showing up -->
+<p><img src="images/latex-logo.png" alt="LaTeX Logo" /><br />
+</p>
+</section><section id="latex-1" class="slide level2">
+<h2>LaTeX ?</h2>
+<ul>
+<li>Un système de composition de documents</li>
+<li>Une langue de balisage (Markup language)</li>
+<li>Un logiciel de conversion de documents</li>
+<li>Publié par Leslie Lamport en 1984</li>
+<li>Collection de macros pour le langage TeX (1976)</li>
+</ul>
+</section><section id="la-différence-avec-word" class="slide level2">
+<h2>La différence avec Word</h2>
+<ul>
+<li>Word : What you see is what you get (WYSIWYG)</li>
+<li>LaTeX : What you see is what you <em>mean</em> (WYSIWYM)</li>
+</ul>
+</section><section class="slide level2">
+
+<p><img src="images/word-formatting.png" alt="Styles dans Word" /><br />
+</p>
+</section><section id="avantages" class="slide level2">
+<h2>Avantages</h2>
+<ul>
+<li>Force l'utilisateur à bien structurer ses documents</li>
+<li>Formatage très précis aux standards de l'imprimerie</li>
+<li>Développé par et pour des académiques</li>
+<li>Durable, car source en texte brut</li>
+<li>Libre, open source et gratuit</li>
+</ul>
+</section><section id="désavantages" class="slide level2">
+<h2>Désavantages</h2>
+<ul>
+<li>Compliqué à apprendre</li>
+<li>Moins visuel que Word</li>
+<li>Peu répandu en sciences humaines</li>
+<li>Difficile à lire au niveau de la source</li>
+<li>Incompatible avec Word</li>
+</ul>
+</section><section id="exemple" class="slide level2">
+<h2>Exemple</h2>
+<p><img src="images/latex-exemple.png" alt="LaTeX exemple" /><br />
+</p>
+</section><section class="slide level2">
+
+<p><img src="images/wtf.gif" alt="WTF?" /><br />
+</p>
+</section><section class="slide level2">
+
+<p>Est-ce que c'est compliqué ?</p>
+</section><section class="slide level2">
+
+<pre><code>\documentclass{article}
+\usepackage{graphicx}</code></pre>
+</section><section class="slide level2">
+
+<pre><code>\begin{document}</code></pre>
+</section><section class="slide level2">
+
+<pre><code>\title{Introduction to LaTeX}
+\author{Author&#39;s Name}</code></pre>
+</section><section class="slide level2">
+
+<pre><code>\maketitle</code></pre>
+</section><section class="slide level2">
+
+<pre><code>\begin{abstract}
+The abstract text goes here.
+\end{abstract}</code></pre>
+</section><section class="slide level2">
+
+<pre><code>\section{Introduction}
+Here is the text of your introduction.</code></pre>
+</section><section class="slide level2">
+
+<pre><code>\begin{equation}
+    \label{simple_equation}
+    \alpha = \sqrt{ \beta }
+\end{equation}</code></pre>
+</section><section class="slide level2">
+
+<pre><code>\subsection{Subsection Heading Here}
+Write your subsection text here.</code></pre>
+</section><section class="slide level2">
+
+<pre><code>\begin{figure}
+    \centering
+    \includegraphics[width=3.0in]{myfigure}
+    \caption{Simulation Results}
+    \label{simulationfigure}
+\end{figure}</code></pre>
+</section><section class="slide level2">
+
+<pre><code>\section{Conclusion}
+Write your conclusion here.</code></pre>
+</section><section class="slide level2">
+
+<pre><code>\end{document}</code></pre>
+</section><section class="slide level2">
+
+<p><img src="images/latex-screen.png" alt="Document LaTeX compilé" /><br />
+</p>
+</section><section class="slide level2">
+
+<p><img src="images/astonished.gif" alt="WOW!" /><br />
+</p>
+</section><section class="slide level2">
+
+<p>Est-ce qu'on peut faire encore plus simple ?</p>
+</section><section id="markdown" class="slide level2">
+<h2>Markdown</h2>
+<ul>
+<li>Langue de balisage simple (MarkDOWN != MarkUP)</li>
+<li>Permet de garder la source lisible</li>
+<li>Facile à convertir dans d'autres formats</li>
+<li>Très répandu sur le web (forums etc.)</li>
+<li>Publié en 2004 par John Gruber et Aaron Swartz</li>
+</ul>
+</section><section class="slide level2">
+
+<blockquote>
+<p>Markdown is intended to be as easy-to-read and easy-to-write as is feasible.</p>
+</blockquote>
+</section><section id="pandoc" class="slide level2">
+<h2>Pandoc</h2>
+<ul>
+<li>Un convertisseur de Markdown en d'autres formats</li>
+<li>Permet d'écrire du LaTeX sans devoir l'apprendre</li>
+<li>Accepte un mélange entre Markdown, LaTeX, HTML</li>
+<li>Libre, gratuit, open source, magique !</li>
+<li>Publié en 2007 par John McFarlane</li>
+</ul>
+</section><section id="résumé" class="slide level2">
+<h2>Résumé</h2>
+</section><section id="word" class="slide level2">
+<h2>Word</h2>
+<p><img src="images/flow_word.png" alt="Word" /><br />
+</p>
+</section><section id="latex-2" class="slide level2">
+<h2>LaTeX</h2>
+<p><img src="images/flow_latex.png" alt="LaTeX" /><br />
+</p>
+</section><section id="pandoc-1" class="slide level2">
+<h2>Pandoc</h2>
+<p><img src="images/flow_pandoc.png" alt="Pandoc" /><br />
+</p>
+</section></section>
+<section><section id="utiliser-pandoc" class="titleslide slide level1"><h1>2 - Utiliser Pandoc</h1></section><section id="structure-dune-commande" class="slide level2">
+<h2>Structure d'une commande</h2>
+<pre><code>pandoc &lt;fichiers&gt; --output &lt;fichier sortie&gt; &lt;options&gt;</code></pre>
+</section><section id="forme-pour-les-options" class="slide level2">
+<h2>Forme pour les options</h2>
+<pre><code>pandoc ... --option &lt;valeur&gt;</code></pre>
+<h3 id="exemples">Exemples:</h3>
+<pre><code>--table-of-contents
+--bibliography example_bibliography.json
+--variable lang=fr</code></pre>
+</section><section class="slide level2">
+
+<pre><code>pandoc example_doc.md --output example_doc.pdf</code></pre>
+</section><section class="slide level2">
+
+<pre><code>pandoc ... --latex-engine xelatex</code></pre>
+</section><section class="slide level2">
+
+<pre><code>...  --number-sections --table-of-contents</code></pre>
+</section><section class="slide level2">
+
+<pre><code>... --variable lang=fr --variable geometry=a4paper</code></pre>
+</section><section class="slide level2">
+
+<pre><code>... --variable documentclass=paper</code></pre>
+</section><section id="intégrer-des-références" class="slide level2">
+<h2>Intégrer des références</h2>
+</section><section class="slide level2">
+
+<pre><code>... --filter pandoc-citeproc</code></pre>
+</section><section class="slide level2">
+
+<pre><code>... --bibliography example_bibliography.json</code></pre>
+</section><section class="slide level2">
+
+<pre><code>... --csl csl/universite-libre-de-bruxelles-histoire.csl</code></pre>
+</section><section class="slide level2">
+
+<pre><code>... --csl csl/chicago-author-date.csl</code></pre>
+</section><section class="slide level2">
+
+<pre><code>... --csl csl/universite-libre-de-bruxelles-histoire.csl</code></pre>
+</section><section id="externaliser-les-options" class="slide level2">
+<h2>Externaliser les options</h2>
+</section><section class="slide level2">
+
+<pre><code>pandoc example_doc.md example_metadata.yaml --output ...</code></pre>
+</section><section class="slide level2">
+
+<pre><code>... --filter pandoc-citeproc --latex-engine xelatex</code></pre>
+</section><section class="slide level2">
+
+<p>example_metadata.yaml</p>
+<pre><code>---
+  bibliography: example_bibliography.json
+  csl: csl/universite-libre-de-bruxelles-histoire.csl
+
+  lang: fr
+  documentclass: scrartcl
+
+  geometry: a4paper
+  linestretch: 1.1
+
+  linkcolor: black
+  urlcolor: blue
+  toc: true
+  lot: true
+---</code></pre>
+</section><section class="slide level2">
+
+<p>example_metadata.yaml</p>
+<pre><code>numbersections: true</code></pre>
+</section></section>
+<section><section id="markdown-1" class="titleslide slide level1"><h1>3 - Markdown</h1></section><section class="slide level2">
+
+<p>Ouvrez example_doc.md</p>
+</section><section id="paragraphes" class="slide level2">
+<h2>Paragraphes</h2>
+<p>Délimité par au moins une ligne vide:</p>
+<pre><code>Lorem ipsum dolor sit amet, consectetur adipiscing
+elit. Etiam tincidunt, orci et vestibulum ultricies,
+magna massa euismod ipsum, vel vulputate turpis
+ligula nec nulla.
+
+Etiam eu odio vehicula, cursus justo eget, porta neque.
+Pellentesque habitant morbi tristique senectus et
+netus et malesuada fames ac turpis egestas.</code></pre>
+</section><section id="titres" class="slide level2">
+<h2>Titres</h2>
+<pre><code># niveau 1
+## niveau 2
+### niveau 3
+#### niveau 4
+...
+
+niveau 1
+========
+
+niveau 2
+--------</code></pre>
+</section><section id="gras-et-italique" class="slide level2">
+<h2>Gras et italique</h2>
+<pre><code>*italique*
+_italique_
+
+**gras**
+__gras__
+
+~~biffé~~</code></pre>
+</section><section id="listes-non-ordonnées" class="slide level2">
+<h2>Listes non ordonnées</h2>
+<pre><code>- on peut utiliser des tirets
+- comme ceci
++ ou bien des plus
+* quelque chose
+* les astérisques ça marche aussi
++ dernier point</code></pre>
+</section><section id="listes-ordonnées" class="slide level2">
+<h2>Listes ordonnées</h2>
+<pre><code>1. On peut
+2. faire attention
+3. aux chiffres
+1. ou pas
+1. Markdown
+1. va toujours
+5. rendre une liste
+2. incrémentelle</code></pre>
+</section><section id="citations-en-bloc" class="slide level2">
+<h2>Citations en bloc</h2>
+<pre><code>&gt; Lorem ipsum dolor sit amet, consectetur adipiscing
+&gt; elit. Etiam tincidunt, orci et vestibulum ultricies,
+&gt; magna massa euismod ipsum,  vel vulputate turpis
+&gt; ligula nec nulla.
+
+&gt; Lorem ipsum dolor sit amet, consectetur adipiscing
+elit. Etiam tincidunt, orci et vestibulum ultricies,
+magna massa euismod ipsum, vel vulputate turpis ligula
+nec nulla.</code></pre>
+</section><section id="notes" class="slide level2">
+<h2>Notes</h2>
+<pre><code>Lorem ipsum dolor sit amet, consectetur adipiscing
+elit. ^[Un petit commentaire.]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing
+elit.[^note]
+
+[^note]: Un petit commentaire.</code></pre>
+</section><section id="liens" class="slide level2">
+<h2>Liens</h2>
+<pre><code>Un lien vers [Wikipédia](http://fr.wikipedia.org).
+Un autre lien vers [Wikipédia][Adresse].
+Un lien simple vers &lt;http://fr.wikipedia.org&gt;.
+
+[Adresse]: http://fr.wikipedia.org</code></pre>
+</section><section id="images" class="slide level2">
+<h2>Images</h2>
+<pre><code>![Une pipe](/chemin/vers/trahison_des_images.jpg)
+![](/chemin/vers/trahison_des_images.jpg)
+![Une autre pipe][trahison]
+
+[trahison]: /chemin/vers/trahison_des_images.jpg</code></pre>
+<p>NB: Une image qui se trouve toute seule dans un paragraphe sera traité comme figure - il convient donc d'ajouter une légende.</p>
+</section><section id="tableaux-1" class="slide level2">
+<h2>Tableaux 1</h2>
+<pre><code>| Format      | File extension |
+|-------------|----------------|
+| BibLaTeX    | .bib           |
+| BibTeX      | .bibtex        |
+| Copac       | .copac         |
+| CSL JSON    | .json          |
+| CSL YAML    | .yaml          |</code></pre>
+</section><section id="tableaux-2" class="slide level2">
+<h2>Tableaux 2</h2>
+<pre><code>+---------------+---------------+--------------------+
+| Fruit         | Price         | Advantages         |
++===============+===============+====================+
+| Bananas       | $1.34         | - built-in wrapper |
+|               |               | - bright color     |
++---------------+---------------+--------------------+
+| Oranges       | $2.10         | - cures scurvy     |
+|               |               | - tasty            |
++---------------+---------------+--------------------+</code></pre>
+</section><section id="commentaires-invisibles" class="slide level2">
+<h2>Commentaires (invisibles)</h2>
+<pre><code>&lt;!-- Commentaire qui n&#39;apparaît pas dans le résultat --&gt;</code></pre>
+</section><section id="métadonnées" class="slide level2">
+<h2>Métadonnées</h2>
+<pre><code>---
+  title: Bienvenue à l&#39;atelier LaTeX !
+  author:
+    - Karsten Marhold
+  date: 18/10/2017
+---</code></pre>
+</section><section class="slide level2">
+
+<p>Les métadonnées peuvent apparaître :</p>
+<ul>
+<li>à la tête du document</li>
+<li>n'importe où dans le document</li>
+<li>dans un fichier séparé</li>
+<li>tout ce qui précède</li>
+</ul>
+</section></section>
+<section><section id="bibliographie" class="titleslide slide level1"><h1>4 - Bibliographie</h1></section><section id="plusieurs-options" class="slide level2">
+<h2>Plusieurs options</h2>
+<ul>
+<li>Intégrer les références &amp; bibliographie manuellement</li>
+<li>Copier-coller depuis Zotero</li>
+<li>Exporter de Zotéro</li>
+</ul>
+</section><section id="exporter-depuis-zotero-1" class="slide level2">
+<h2>Exporter depuis Zotero (1)</h2>
+<p><img src="images/zotero-export-collection.png" alt="Exporter une collection" /><br />
+</p>
+</section><section id="exporter-depuis-zotero-2" class="slide level2">
+<h2>Exporter depuis Zotero (2)</h2>
+<p><img src="images/zotero-export-format.png" alt="Choisir &quot;CSL&quot; comme format" /><br />
+</p>
+</section><section class="slide level2">
+
+<p>example_bibliography.json</p>
+<pre><code>[
+    {
+        &quot;id&quot;: &quot;http://zotero.org/users/2663066/items/UXDSE6HB&quot;,
+        &quot;type&quot;: &quot;book&quot;,
+        &quot;title&quot;: &quot;Networks of Power&quot;,
+        &quot;publisher&quot;: &quot;Johns Hopkins University Press&quot;,
+        &quot;publisher-place&quot;: &quot;Baltimore&quot;,
+        &quot;event-place&quot;: &quot;Baltimore&quot;,
+...</code></pre>
+</section><section class="slide level2">
+
+<p>&quot;id&quot;: &quot;<strong>http://zotero.org/users/2663066/items/UXDSE6HBÜ</strong>&quot;</p>
+</section><section id="citer-des-sources" class="slide level2">
+<h2>Citer des Sources</h2>
+<pre><code>Lorem ipsum dolor sit amet, consectetur adipiscing
+elit.[@http://zotero.org/users/2663066/items/UXDSE6HB, 22]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing
+elit.[@http://zotero.org/users/2663066/items/UXDSE6HB,
+ch. 2]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing
+elit.[@http://zotero.org/users/2663066/items/UXDSE6HB,
+part 3]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing
+elit.[@http://zotero.org/users/2663066/items/UXDSE6HB, 2
+See also http://zotero.org/users/2663066/items/VSWI74DN,
+33, aussi chapitre 5]</code></pre>
+</section><section id="rappel-style-des-citations" class="slide level2">
+<h2>Rappel: style des citations</h2>
+<p>Lien vers le fichier CSL souhaité à indiquer dans les métadonnées.</p>
+<pre><code>  csl: csl/universite-libre-de-bruxelles-histoire.csl</code></pre>
+</section><section class="slide level2">
+
+<p><em>Attention:</em> Toujours invoquer Pandoc avec <code>--filter pandoc-citeproc</code> !</p>
+</section><section id="fonctions-de-pandoc-citeproc" class="slide level2">
+<h2>Fonctions de pandoc-citeproc</h2>
+<ul>
+<li>Styles CSL configurables</li>
+<li>Reconnait citations récurrentes:
+<ul>
+<li>ibid.</li>
+<li>op. cit.</li>
+</ul></li>
+<li>Reconnaît abbréviations tels que:
+<ul>
+<li>page, p., pg./chapter, ch., chap./volume, v., vol. ...</li>
+</ul></li>
+<li>Bibliographie automatique
+<ul>
+<li>sous la section &quot;Références&quot; si elle existe</li>
+<li>sinon, à la fin du document</li>
+</ul></li>
+</ul>
+</section><section id="inconvénients" class="slide level2">
+<h2>Inconvénients</h2>
+<ul>
+<li>ID peu lisible en format JSON</li>
+<li>Si l'on exporte en BibTeX, on perd des informations (mais l'ID reste lisible, ex. <code>@hughes_networks_1983</code>)</li>
+<li>Pas de mise à jour automatique : on doit exporter pour intégrer de nouvelles références</li>
+</ul>
+</section></section>
+<section><section id="pratique" class="titleslide slide level1"><h1>5 - Pratique</h1></section><section id="exercice-1" class="slide level2">
+<h2>Exercice 1</h2>
+<p>Convertissez example_doc.md en format PDF avec citations.</p>
+</section><section id="exercice-2" class="slide level2">
+<h2>Exercice 2</h2>
+<p>Convertissez example_doc.md en format DOCX avec citations.</p>
+</section><section id="exercice-3" class="slide level2">
+<h2>Exercice 3</h2>
+<p>Convertissez example_doc.md en format EPUB (e-book) avec citations.</p>
+</section><section id="exercice-4" class="slide level2">
+<h2>Exercice 4</h2>
+<p>Mettez la première phrase du document en gras et italique.</p>
+<p>Convertissez le document en PDF.</p>
+</section><section id="exercice-5" class="slide level2">
+<h2>Exercice 5</h2>
+<p>Ajoutez une note en bas de page au premier paragraphe du document.</p>
+<p>Convertissez le document en PDF.</p>
+</section><section id="exercice-6" class="slide level2">
+<h2>Exercice 6</h2>
+<p>Citez page 5 de l'article de Michel Callon à la fin du premier paragraphe.</p>
+<p>Convertissez le document en PDF.</p>
+</section><section id="exercice-7" class="slide level2">
+<h2>Exercice 7</h2>
+<p>Changez le style de citation en Chicago Author-Date.</p>
+<p>Convertissez le document en PDF.</p>
+</section><section id="exercice-8" class="slide level2">
+<h2>Exercice 8</h2>
+<p>Agrandissez l'espacement des lignes à 1.5.</p>
+<p>Convertissez le document en PDF.</p>
+</section><section id="exercice-9" class="slide level2">
+<h2>Exercice 9</h2>
+<p>Ajoutez une liste des figures.</p>
+<p>Astuce : l'option a la forme <code>toc: true</code>.</p>
+<p>Convertissez le document en PDF.</p>
+</section><section id="exercice-10" class="slide level2">
+<h2>Exercice 10</h2>
+<p>Changez le type de document en « livre ».</p>
+<p>Astuce : le type s'appele <code>book</code> ou <code>scrbook</code>.</p>
+<p>Convertissez le document en PDF.</p>
+</section><section id="exercice-bonus" class="slide level2">
+<h2>Exercice BONUS</h2>
+<p>Créez votre propre document, citez une référence, ajoutez la bibliographie.</p>
+<p>Convertissez le document en PDF et en DOCX.</p>
+</section></section>
+<section><section id="conclusion" class="titleslide slide level1"><h1>6 - Conclusion</h1></section><section id="que-savez-vous-faire-maintenant" class="slide level2">
+<h2>Que savez-vous faire maintenant ?</h2>
+<ul>
+<li>Écrire une thèse dans Notepad !</li>
+<li>Formater un même texte en article, livre, rapport, mémoire...</li>
+<li>Changer le style de toutes vos citations en un coup de main</li>
+<li>Convertir votre document en PDF, DOC, EPUB, HTML, MediaWiki...</li>
+</ul>
+</section><section id="pandoc-nest-pas-parfait" class="slide level2">
+<h2>Pandoc n'est pas parfait</h2>
+<ul>
+<li>Pas mal de préparation nécessaire</li>
+<li>Google fait souvent office de documentation</li>
+<li>Changer les habitudes est difficile</li>
+<li>Interoperabilité pas toujours parfaite... (Zotero)</li>
+</ul>
+</section></section>
+<section><section id="ressources" class="titleslide slide level1"><h1>7 - Ressources</h1></section><section id="quelques-liens" class="slide level2">
+<h2>Quelques liens</h2>
+<ul>
+<li><a href="https://pandoc.org/MANUAL.html" class="uri">https://pandoc.org/MANUAL.html</a></li>
+<li><a href="https://tex.stackexchange.com/" class="uri">https://tex.stackexchange.com/</a></li>
+<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" class="uri">https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</a></li>
+<li><a href="https://programminghistorian.org/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown" class="uri">https://programminghistorian.org/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown</a></li>
+<li>...et plein d'autres...</li>
+</ul>
+</section><section id="its-magic..." class="slide level2">
+<h2>It's magic...</h2>
+<p><img src="images/magic.gif" alt="Magic!" /><br />
+</p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>

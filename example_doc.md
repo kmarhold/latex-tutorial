@@ -91,7 +91,9 @@ Praesent urna magna, vulputate ut metus at, tempor luctus mi.
 
 ## Notes
 
-Donec commodo magna a faucibus suscipit.^[Une note dans le texte. On peut également copier et coller des références à partir de Zotero : Hughes, Thomas P. _Networks of Power._ Baltimore: Johns Hopkins University Press, 1983.]
+Donec commodo magna a faucibus suscipit.^[Une note dans le texte. On peut
+également copier et coller des références à partir de Zotero : Hughes, Thomas P.
+_Networks of Power._ Baltimore: Johns Hopkins University Press, 1983.]
 Nulla purus purus, blandit vitae mauris vel, mollis feugiat justo. Sed accumsan
 vehicula sodales. Ut eget consectetur tellus. Cras nisi orci, porta vel felis
 sit amet, dictum vestibulum urna. Duis ac viverra purus, a pharetra nisi.[^note]
@@ -174,6 +176,8 @@ metus, eleifend a odio sit amet, aliquet lacinia mauris. Aliquam eget
 ullamcorper dui. Nulla id ornare sapien. Nulla viverra, ipsum sed molestie
 sagittis, nisl erat ultricies neque, non malesuada velit sem sed orci.
 
+Table: Formats de bibliographie compatibles avec Pandoc.
+
 | Format      | File extension |
 |-------------|----------------|
 | BibLaTeX    | .bib           |
@@ -187,8 +191,6 @@ sagittis, nisl erat ultricies neque, non malesuada velit sem sed orci.
 | MEDLINE     | .medline       |
 | MODS        | .mods          |
 | RIS         | .ris           |
-
-: Formats de bibliographie compatibles avec Pandoc.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula, lacus ac
 fringilla commodo, libero justo commodo dui, a gravida leo elit non justo.
@@ -216,7 +218,7 @@ maximus viverra sem. Pellentesque lacus nibh, ultrices quis convallis in,
 ultrices at diam. Cras sagittis nisi eu arcu porttitor volutpat.
 
 \begin{table}
-\caption[Un tableau LaTeX]{Un tableau LaTeX}
+\caption[Un tableau LaTeX]{Un tableau LaTeX}\tabularnewline
   \centering
     \begin{tabular}{lllll}
     \toprule
@@ -289,11 +291,12 @@ Praesent urna magna, vulputate ut metus at, tempor luctus mi.
 
 Aliquam dapibus aliquam tempus. Suspendisse non nibh tristique, venenatis justo
 ac, sagittis ante. Nam commodo dictum quam, id tempus erat congue sit amet.
-Phasellus sed elit in enim congue molestie. Suspendisse turpis orci, feugiat ac
-porta in, venenatis quis est. Ut eros mauris, molestie vestibulum mauris quis,
-fringilla vulputate justo. Pellentesque est ligula, condimentum ut ante non,
-maximus viverra sem. Pellentesque lacus nibh, ultrices quis convallis in,
-ultrices at diam. Cras sagittis nisi eu arcu porttitor volutpat.
+Phasellus sed elit in enim congue molestie. ![Voiture électrique](images/R5
+Électrique.jpg) Suspendisse turpis orci, feugiat ac porta in, venenatis quis
+est. Ut eros mauris, molestie vestibulum mauris quis, fringilla vulputate justo.
+Pellentesque est ligula, condimentum ut ante non, maximus viverra sem.
+Pellentesque lacus nibh, ultrices quis convallis in, ultrices at diam. Cras
+sagittis nisi eu arcu porttitor volutpat.
 
 Donec commodo magna a faucibus suscipit. Nulla purus purus, blandit vitae mauris
 vel, mollis feugiat justo. Sed accumsan vehicula sodales. Ut eget consectetur

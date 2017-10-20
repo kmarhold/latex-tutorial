@@ -1,5 +1,5 @@
 *.doc
 *.docx
-*.pdf
+example_doc.pdf
 *.epub
 .DS_Store
